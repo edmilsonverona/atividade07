@@ -23,6 +23,6 @@ public class ValidadorTest {
     @Test
     public void validarVetorNulo() {
         Validador validador = new Validador();
-        assertTrue(validador.validar(null));
+        assertFalse(validador.validar(null));
     }
 }
