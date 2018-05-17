@@ -13,10 +13,7 @@ public class Validador implements ValidadorInt{
 
     @Override
     public boolean validar(double[] numeros) {
-        if (numeros == null || numeros.length == 0){
-            return false;
-        }
-        return true;
+        return !(numeros == null || numeros.length == 0);
     }
     
 }
