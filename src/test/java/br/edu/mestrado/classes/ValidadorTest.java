@@ -25,4 +25,11 @@ public class ValidadorTest {
         Validador validador = new Validador();
         assertFalse(validador.validar(null));
     }
+    
+    @Test
+    public void validarVetorVazio() {
+        Validador validador = new Validador();
+        double[] numeros = {};
+        assertFalse(validador.validar(numeros));
+    }
 }
