@@ -22,12 +22,14 @@ public class ValidadorTest {
     //
     @Test
     public void validarVetorNulo() {
+        
         Validador validador = new Validador();
         assertFalse(validador.validar(null));
     }
     
     @Test
     public void validarVetorVazio() {
+        
         Validador validador = new Validador();
         double[] numeros = {};
         assertFalse(validador.validar(numeros));
