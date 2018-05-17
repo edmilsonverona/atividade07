@@ -5,6 +5,7 @@
  */
 package br.edu.mestrado.classes;
 
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -28,7 +29,7 @@ public class ConsultarVetorTest {
     public void encontrarNumeroMenores() {
         ConsultarVetor consultarVetor = new ConsultarVetor();
         List<Double> retorno = consultarVetor.buscarNumeroMenores(numeros, 4D);
-        assertEquals(new int[]{1, 2}, retorno.toArray());
+        assertEquals(Arrays.toString(new double[]{1, 2}),  Arrays.toString(retorno.toArray()));
     
     }
 }
