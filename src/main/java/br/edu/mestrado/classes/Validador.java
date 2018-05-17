@@ -14,6 +14,8 @@ public class Validador {
     public boolean validar(double[] numeros) {
         if (numeros == null){
             return false;
+        } else if (numeros.length == 0){
+            return false;
         }
         return true;
     }
