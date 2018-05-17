@@ -24,4 +24,9 @@ public class ConsultarVetor {
         return lstNumerosMenores;
     }
     
+     public List<Double> buscarNumeroMaiores(double[] numeros, double n) {
+        List<Double> lstNumerosMenores = new ArrayList<>();
+        return lstNumerosMenores;
+    }
+    
 }

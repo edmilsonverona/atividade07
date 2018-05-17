@@ -26,10 +26,18 @@ public class ConsultarVetorTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void encontrarNumeroMenores() {
+    public void encontrarNumerosMenores() {
         ConsultarVetor consultarVetor = new ConsultarVetor();
         List<Double> retorno = consultarVetor.buscarNumeroMenores(numeros, 4D);
         assertEquals(Arrays.toString(new double[]{1, 2}),  Arrays.toString(retorno.toArray()));
+    
+    }
+    
+    @Test
+    public void encontrarNumerosMaiores() {
+        ConsultarVetor consultarVetor = new ConsultarVetor();
+        List<Double> retorno = consultarVetor.buscarNumeroMaiores(numeros, 4D);
+        assertEquals(Arrays.toString(new double[]{5, 6}),  Arrays.toString(retorno.toArray()));
     
     }
 }
