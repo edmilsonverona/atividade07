@@ -26,6 +26,11 @@ public class ConsultarVetor {
     
      public List<Double> buscarNumeroMaiores(double[] numeros, double n) {
         List<Double> lstNumerosMenores = new ArrayList<>();
+        for (double num : numeros){
+            if (num > n){
+                lstNumerosMenores.add(num);
+            }
+        }
         return lstNumerosMenores;
     }
     
