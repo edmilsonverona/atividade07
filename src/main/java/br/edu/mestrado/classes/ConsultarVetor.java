@@ -13,6 +13,12 @@ import java.util.List;
  * @author ed_ve
  */
 public class ConsultarVetor {
+    
+    private ValidadorInt validador;
+
+    public ConsultarVetor(ValidadorInt validador) {
+        this.validador = validador;
+    }       
 
     public List<Double> buscarNumeroMenores(double[] numeros, double n) {
         List<Double> lstNumerosMenores = new ArrayList<>();

@@ -27,7 +27,7 @@ public class ConsultarVetorTest {
     //
     @Test
     public void encontrarNumerosMenores() {
-        ConsultarVetor consultarVetor = new ConsultarVetor();
+        ConsultarVetor consultarVetor = new ConsultarVetor(new Validador());
         List<Double> retorno = consultarVetor.buscarNumeroMenores(numeros, 4D);
         assertEquals(Arrays.toString(new double[]{1, 2}),  Arrays.toString(retorno.toArray()));
     
@@ -35,7 +35,7 @@ public class ConsultarVetorTest {
     
     @Test
     public void encontrarNumerosMaiores() {
-        ConsultarVetor consultarVetor = new ConsultarVetor();
+        ConsultarVetor consultarVetor = new ConsultarVetor(new Validador());
         List<Double> retorno = consultarVetor.buscarNumeroMaiores(numeros, 4D);
         assertEquals(Arrays.toString(new double[]{5, 6}),  Arrays.toString(retorno.toArray()));
     
