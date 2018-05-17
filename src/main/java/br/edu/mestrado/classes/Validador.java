@@ -12,6 +12,9 @@ package br.edu.mestrado.classes;
 public class Validador {
 
     public boolean validar(double[] numeros) {
+        if (numeros == null){
+            return false;
+        }
         return true;
     }
     
