@@ -9,15 +9,8 @@ package br.edu.mestrado.classes;
  *
  * @author ed_ve
  */
-public class Validador implements ValidadorInt{
-
-    public boolean validar(double[] numeros) {
-        if (numeros == null){
-            return false;
-        } else if (numeros.length == 0){
-            return false;
-        }
-        return true;
-    }
+public interface ValidadorInt {
+    
+     public boolean validar(double[] numeros);
     
 }
