@@ -11,10 +11,9 @@ package br.edu.mestrado.classes;
  */
 public class Validador implements ValidadorInt{
 
+    @Override
     public boolean validar(double[] numeros) {
-        if (numeros == null){
-            return false;
-        } else if (numeros.length == 0){
+        if (numeros == null || numeros.length == 0){
             return false;
         }
         return true;
