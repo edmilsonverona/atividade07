@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: "edmilsonverona-github"
   token:
-      secure: 25f9088ca9b1cc50c57654b3691c0200e373675b
+      secure: 9200bf4162c4f941b05cb192431bffe6325e301a
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
